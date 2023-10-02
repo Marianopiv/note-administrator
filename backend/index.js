@@ -6,8 +6,11 @@ const routes = require("./routes")
 
 const app = express();
 app.use(cors())
+//Permite que se puedan realizar peticiones, desde direcciones distintas a la del servidor que esta corriendo
 app.use(express.urlencoded({ extended: false }));
+//Permite que se puedan realizar peticiones http
 app.use(bodyParser.json());
+//Aca defino la estructura del cuerpo para poder mandar por body
 app.use("/api",routes)
 // Your routes and other server logic can go here
 

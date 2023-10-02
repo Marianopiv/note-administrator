@@ -118,6 +118,7 @@ const GlobalProvider = ({ children }) => {
   };
 
   const { pathname } = useLocation();
+  
   let splitted = pathname.split("/");
 
   const handleFilterNotes = (filter) => {
